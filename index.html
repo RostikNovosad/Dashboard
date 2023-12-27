@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <aside class="aside">
+      <div class="aside-small"><button class="aside-small-arrow">></button></div>
+        <div class="aside-full aside-full-hidden">
+          <div class="aside-top">
+            <div class="aside-title">
+            <img src="./img/dashboard-logo.png" alt="dashboard-logo" class="dashboard-logo">
+            <h2 class="dashboard-title">Dashboard <span class="dashboard-version">v.01</span></h2>
+            </div>
+            <div class="aside-buttons">
+            <div class="btn-board"><div class="btn-right-side"><img src="./img/dashboard.png" alt="" class="btn-icon"><button class="btn-choose">Dashboard</button></div><span class="btn-arrow">></span></div>
+            <div class="btn-board"><div class="btn-right-side"><img src="./img/product.png" alt="" class="btn-icon"><button class="btn-choose">Product</button></div><span class="btn-arrow">></span></div>
+            <div class="btn-board btn-board-active"><div class="btn-right-side"><img src="./img/customers.png" alt="" class="btn-icon"><button class="btn-choose btn-choose-active">Customers</button></div><span class="btn-arrow btn-arrow-active">></span></div>
+            <div class="btn-board"><div class="btn-right-side"><img src="./img/income.png" alt="" class="btn-icon"><button class="btn-choose">Income</button></div><span class="btn-arrow">></span ></div>
+            <div class="btn-board"><div class="btn-right-side"><img src="./img/promote.png" alt="" class="btn-icon"><button class="btn-choose">Promote</button></div><span class="btn-arrow">></span></div>
+            <div class="btn-board"><div class="btn-right-side"><img src="./img/help.png" alt="" class="btn-icon"><button class="btn-choose">Help</button></div><span class="btn-arrow">></span></div>
+            </div>
+        </div>
+        <div class="aside-account">
+            <img src="./img/evano-profile.png" alt="profile-img" class="aside-account-img">
+            <div class="aside-account-text">
+                <h3 class="aside-account-name">Evano</h3>
+                <h4 class="aside-account-description">Project Manager</h4>
+            </div>
+        </div>
+        </div>
+    </aside>
+    <main class="main">
+    <h1 class="main-title">Hello Evano &#x1F44B</h1>
+    <div class="board">
+      <div class="board-header">
+        <div class="board-titles">
+          <h2 class="board-title">All Customers</h2>
+          <h3 class="board-subtitle">Active Members</h3>
+        </div>
+        <div class="search">
+          <label for="" class="search-label"
+            ><img
+              src="./img/search.png"
+              alt="search-icon"
+              class="search-icon"
+            />
+            <input type="text" placeholder="Search" class="search-input" />
+          </label>
+        </div>
+      </div>
+      <div class="board-main">
+        <!-- Customer Name -->
+        <ul>
+          Customer Name
+          <li>Jane Cooper</li>
+          <li>Jane Cooper</li>
+          <li>Jane Cooper</li>
+          <li>Jane Cooper</li>
+          <li>Jane Cooper</li>
+          <li>Jane Cooper</li>
+          <li>Jane Cooper</li>
+          <li>Jane Cooper</li>
+        </ul>
+        <!-- Company -->
+        <ul>
+          Company
+          <li>Microsoft</li>
+          <li>Microsoft</li>
+          <li>Microsoft</li>
+          <li>Microsoft</li>
+          <li>Microsoft</li>
+          <li>Microsoft</li>
+          <li>Microsoft</li>
+          <li>Microsoft</li>
+        </ul>
+        <!-- Phone Number -->
+        <ul>
+          Phone Number
+          <li>(225) 555-0118</li>
+          <li>(225) 555-0118</li>
+          <li>(225) 555-0118</li>
+          <li>(225) 555-0118</li>
+          <li>(225) 555-0118</li>
+          <li>(225) 555-0118</li>
+          <li>(225) 555-0118</li>
+          <li>(225) 555-0118</li>
+        </ul>
+        <!-- Email -->
+        <ul>
+          Email
+          <li>jane@microsoft.com</li>
+          <li>jane@microsoft.com</li>
+          <li>jane@microsoft.com</li>
+          <li>jane@microsoft.com</li>
+          <li>jane@microsoft.com</li>
+          <li>jane@microsoft.com</li>
+          <li>jane@microsoft.com</li>
+          <li>jane@microsoft.com</li>
+        </ul>
+        <!-- Country -->
+        <ul>
+          Country
+          <li>United States</li>
+          <li>United States</li>
+          <li>United States</li>
+          <li>United States</li>
+          <li>United States</li>
+          <li>United States</li>
+          <li>United States</li>
+          <li>United States</li>
+        </ul>
+        <!-- Status -->
+        <ul class="status-list">
+          Status
+          <li class="status-btn"><button class="btn-active">Active</button></li>
+          <li class="status-btn">
+            <button class="btn-inactive">Inactive</button>
+          </li>
+          <li class="status-btn"><button class="btn-active">Active</button></li>
+          <li class="status-btn"><button class="btn-active">Active</button></li>
+          <li class="status-btn"><button class="btn-active">Active</button></li>
+          <li class="status-btn"><button class="btn-active">Active</button></li>
+          <li class="status-btn"><button class="btn-active">Active</button></li>
+          <li class="status-btn"><button class="btn-active">Active</button></li>
+        </ul>
+      </div>
+      <div class="board-bottom">
+        <div class="board-data">
+          <p>Showing data 1 to 8 of 256K entries</p>
+        </div>
+        <div class="pages">
+          <button class="btn-page"><</button>
+          <button class="btn-page btn-page-active">1</button>
+          <button class="btn-page">2</button>
+          <button class="btn-page">3</button>
+          <button class="btn-page">4</button>
+          <button class="btn-page">...</button>
+          <button class="btn-page">40</button>
+          <button class="btn-page">></button>
+        </div>
+      </div>
+    </div>
+    </main>
+
+    <script src="./js/file.js"></script>
+  </body>
+</html>

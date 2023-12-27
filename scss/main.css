@@ -1,0 +1,306 @@
+:root {
+  --white-color: white;
+  --background-color-light-grey: #fafbff;
+  --search-input-color: #f9fbff;
+  --active-color: #16c098;
+  --active-button-bg-color: #a6e7d8;
+  --active-button-color: #008767;
+  --inactive-button-bg-color: #ffc5c5;
+  --inactive-button-color: #df0404;
+  --page-button-border-color: #eeeeee;
+  --page-button-main-color: #f5f5f5;
+  --page-button-choose-color: #5932ea;
+  --paragraph-text-color: #b5b7c0;
+  --version-color: #838383;
+  --dashboard-btn-color: #9197b3;
+  --account-description-color: #757575;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 8px;
+}
+@media screen and (min-width: 768px) {
+  * {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  * {
+    font-size: 14px;
+  }
+}
+
+body {
+  background-color: var(--background-color-light-grey);
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  margin-top: 50px;
+  margin-inline: 100px 50px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: -1%;
+  margin-top: 40px;
+  height: 30px;
+}
+
+.search-label {
+  margin-right: 15px;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--search-input-color);
+  margin-bottom: 10px;
+}
+.search-icon {
+  width: 24px;
+  height: 24px;
+  margin-inline: 7px;
+}
+.search-input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background-color: transparent;
+}
+.search-input:focus {
+  outline: 0;
+}
+
+.btn-active {
+  width: 60px;
+  height: 20px;
+  border-radius: 4px;
+  color: var(--active-button-color);
+  border: 1px solid var(--active-button-color);
+  background-color: var(--active-button-bg-color);
+}
+@media screen and (min-width: 768px) {
+  .btn-active {
+    width: 70px;
+    height: 25px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .btn-active {
+    width: 80px;
+    height: 30px;
+  }
+}
+.btn-inactive {
+  width: 60px;
+  height: 20px;
+  border-radius: 4px;
+  color: var(--inactive-button-color);
+  border: 1px solid var(--inactive-button-color);
+  background-color: var(--inactive-button-bg-color);
+}
+@media screen and (min-width: 768px) {
+  .btn-inactive {
+    width: 70px;
+    height: 25px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .btn-inactive {
+    width: 80px;
+    height: 30px;
+  }
+}
+
+.btn-page {
+  width: 24px;
+  height: 24px;
+  background-color: var(--page-button-main-color);
+  border: 1px solid var(--page-button-border-color);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+}
+.btn-page-active {
+  background-color: var(--page-button-choose-color);
+  border: 1px solid var(--page-button-choose-color);
+  color: var(--white-color);
+}
+
+.main-title {
+  font-weight: 500;
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .main-title {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main-title {
+    font-size: 24px;
+  }
+}
+
+.aside-small {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aside-small-arrow {
+  background-color: transparent;
+  border: 0;
+  font-size: 24px;
+}
+.aside-full {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  padding-top: 40px;
+  padding-left: 30px;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.aside-full-hidden {
+  left: -300px;
+}
+.aside-title {
+  display: flex;
+  margin-bottom: 50px;
+}
+.aside-account {
+  display: flex;
+  margin-bottom: 50px;
+}
+.aside-account-img {
+  width: 42px;
+  height: 42px;
+}
+.aside-account-text {
+  margin-left: 10px;
+}
+.aside-account-name {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1%;
+}
+.aside-account-description {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1%;
+  color: var(--account-description-color);
+}
+.aside .dashboard-title {
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: 1%;
+  margin-left: 10px;
+}
+.aside .dashboard-logo {
+  width: 37px;
+  height: 37px;
+}
+.aside .dashboard-version {
+  font-weight: 500;
+  font-size: 10px;
+  color: var(--dashboard-btn-color);
+}
+
+.btn-board {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 230px;
+  height: 45px;
+}
+.btn-board-active {
+  background-color: var(--page-button-choose-color);
+  border-radius: 8px;
+}
+.btn-right-side {
+  display: flex;
+  align-items: center;
+}
+.btn-icon {
+  margin-inline: 10px 15px;
+  width: 24px;
+  height: 24px;
+}
+.btn-choose {
+  background-color: transparent;
+  border: 0;
+  color: var(--version-color);
+}
+.btn-choose-active {
+  color: var(--white-color);
+}
+.btn-arrow {
+  display: flex;
+  margin-right: 20px;
+  color: var(--version-color);
+}
+.btn-arrow-active {
+  color: var(--white-color);
+}
+
+.board {
+  padding: 30px 40px;
+  background-color: var(--white-color);
+  border-radius: 30px;
+  margin-top: 50px;
+}
+.board-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.board-title {
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: -1%;
+}
+.board-subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -1%;
+  color: var(--active-color);
+}
+.board-main {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.board-bottom {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.board-data {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--paragraph-text-color);
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,17 @@
+.btn {
+  &-page {
+    width: 24px;
+    height: 24px;
+    background-color: var(--page-button-main-color);
+    border: 1px solid var(--page-button-border-color);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+
+    &-active {
+      background-color: var(--page-button-choose-color);
+      border: 1px solid var(--page-button-choose-color);
+      color: var(--white-color);
+    }
+  }
+}

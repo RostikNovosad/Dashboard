@@ -1,0 +1,44 @@
+.btn {
+  &-board {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 230px;
+    height: 45px;
+
+    &-active {
+      background-color: var(--page-button-choose-color);
+      border-radius: 8px;
+    }
+  }
+
+  &-right-side {
+    display: flex;
+    align-items: center;
+  }
+
+  &-icon {
+    margin-inline: 10px 15px;
+    width: 24px;
+    height: 24px;
+  }
+
+  &-choose {
+    background-color: transparent;
+    border: 0;
+    color: var(--version-color);
+    &-active {
+      color: var(--white-color);
+    }
+  }
+
+  &-arrow {
+    display: flex;
+    margin-right: 20px;
+    color: var(--version-color);
+    &-active {
+      color: var(--white-color);
+    }
+  }
+}

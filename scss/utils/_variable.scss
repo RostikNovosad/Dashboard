@@ -1,0 +1,21 @@
+:root {
+  --white-color: white;
+  --background-color-light-grey: #fafbff;
+  --search-input-color: #f9fbff;
+  --active-color: #16c098;
+  --active-button-bg-color: #a6e7d8;
+  --active-button-color: #008767;
+  --inactive-button-bg-color: #ffc5c5;
+  --inactive-button-color: #df0404;
+  --page-button-border-color: #eeeeee;
+  --page-button-main-color: #f5f5f5;
+  --page-button-choose-color: #5932ea;
+  --paragraph-text-color: #b5b7c0;
+  --version-color: #838383;
+  --dashboard-btn-color: #9197b3;
+  --account-description-color: #757575;
+}
+
+$bp-desktop: 1280px;
+$bp-tablet: 768px;
+$bp-mobile: 480px;

@@ -294,6 +294,9 @@ li {
   display: flex;
   justify-content: space-between;
 }
+.board-list-title {
+  color: var(--paragraph-text-color);
+}
 .board-bottom {
   margin: 40px 0;
   display: flex;
